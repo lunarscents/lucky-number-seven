@@ -1,20 +1,19 @@
 import React from "react";
-import { StyleSheet, Text, View, StatusBar } from "react-native";
+import { Text, StatusBar } from "react-native";
+import styled from "styled-components/native";
+import { BG_COLOR } from "./constants/Colors";
 
+const Container = styled.View`
+  flex: 1;
+  background-color: ${BG_COLOR};
+  align-items: "center";
+  justify-content: "center";
+`;
 export default function App() {
   return (
-    <View style={styles.container}>
+    <Container>
       <StatusBar barStyle="light-content" />
       <Text>Hello, Lunarscents!</Text>
-    </View>
+    </Container>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  }
-});
