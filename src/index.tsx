@@ -5,9 +5,9 @@ import { BG_COLOR } from "./constants/Colors";
 
 const Container = styled.View`
   flex: 1;
-  background-color: ${BG_COLOR};
-  align-items: "center";
-  justify-content: "center";
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
 `;
 export default function App() {
   return (

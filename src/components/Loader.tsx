@@ -5,7 +5,7 @@ import styled from "styled-components/native";
 
 const Container = styled.View`
   flex: 1;
-  background-color: ${BG_COLOR};
+  background-color: #fff;
   justify-content: center;
 `;
 
