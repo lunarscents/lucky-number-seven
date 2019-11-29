@@ -1,1 +1,1 @@
-export default "Dontainers";
+export { default as PageContainer } from "./PageContainer";
