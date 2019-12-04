@@ -1,6 +1,6 @@
 import React from "react";
 import { ActivityIndicator } from "react-native";
-import { TINT_COLOR, BG_COLOR } from "../constants/Colors";
+import { TINT_COLOR } from "../constants/Colors";
 import styled from "styled-components/native";
 
 const Container = styled.View`

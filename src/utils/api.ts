@@ -1,17 +1,16 @@
 import axios from "axios";
-import { LottoParams, LottoResponse } from "./schemas";
+import { LottoParams, LottoResponse } from "../interfaces/lotto";
 
-export const api = (id: number) =>
-  axios
-    .get("https://www.nlotto.co.kr/common.do", {
-      params: {
-        method: "getLottoNumber",
-        drwNo: id
-      } as LottoParams
-    })
-    .then(result => {
-      console.log(result);
-      const { data } = result;
+export const requestAPI = (id: number) =>
+  axios.get("https://www.nlotto.co.kr/common.do", {
+    params: {
+      method: "getLottoNumber",
+      drwNo: id
+    } as LottoParams
+  });
+// .then(result => {
+//   console.log(result);
+//   // const { data } = result;
 
-      return data as LottoResponse;
-    });
+//   return result; // as LottoResponse;
+// });
