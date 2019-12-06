@@ -1,3 +1,3 @@
 import MyContainer from "../containers/MyContainer";
 
-export default () => <MyContainer />;
+export default MyContainer;
